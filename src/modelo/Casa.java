@@ -1,5 +1,7 @@
 package modelo;
 
+import util.AumentoMaiorDoQueJurosException;
+
 public class Casa extends Financiamento{
 
     private double areaContruida;
@@ -13,7 +15,7 @@ public class Casa extends Financiamento{
     }
 
     @Override
-    public double calcularPagamentoMensal() {
+    public double calcularPagamentoMensal() throws AumentoMaiorDoQueJurosException {
         return super.calcularPagamentoMensal() + 80;
     }
 }
