@@ -12,4 +12,8 @@ public class Apartamento extends Financiamento{
         this.numeroVagasGaragem = numeroVagasGaragem;
     }
 
+    public String toString(){
+        return super.toString() + String.format(";%d;%d", this.numeroVagasGaragem, this.numeroAndar);
+    }
+
 }

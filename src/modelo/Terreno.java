@@ -13,4 +13,9 @@ public class Terreno extends Financiamento{
     public double calcularPagamentoMensal() {
         return super.calcularPagamentoMensal() * 1.2;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + this.tipoDeZona;
+    }
 }
